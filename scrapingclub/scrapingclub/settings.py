@@ -7,6 +7,8 @@
 #     https://docs.scrapy.org/en/latest/topics/downloader-middleware.html
 #     https://docs.scrapy.org/en/latest/topics/spider-middleware.html
 
+FEED_EXPORT_ENCODIND = "utf-8"
+
 BOT_NAME = 'scrapingclub'
 
 SPIDER_MODULES = ['scrapingclub.spiders']
@@ -17,7 +19,7 @@ NEWSPIDER_MODULE = 'scrapingclub.spiders'
 #USER_AGENT = 'scrapingclub (+http://www.yourdomain.com)'
 
 # Obey robots.txt rules
-ROBOTSTXT_OBEY = True
+ROBOTSTXT_OBEY = False
 
 # Configure maximum concurrent requests performed by Scrapy (default: 16)
 #CONCURRENT_REQUESTS = 32
